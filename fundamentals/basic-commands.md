@@ -46,6 +46,7 @@ user
 To change directories from the terminal
 
 # security relevance
+Allows navigation thought the file system.   It is
 
 **Example:**
 ```bash
@@ -56,9 +57,63 @@ bash:/etc  $cd ../../.. :to move uo three levels and so on
 ```
 ---------------------------------------------------------------
 
+# --help  /  -h  / -?
+To have help about any command
 
+# security relevance
+Displays usage and option for a command
 
+**Example:**
+```bash
+ls --help
+```
+----------------------------------------------------------------
 
+# man 
+Provides a command documentation for commands
 
+# security relevance
+To learn advanced options that affect permissions, processes or system configuration
 
+**Example:**
+```bash
+man ssh
+```
+----------------------------------------------------------------
+
+# locate
+Finds files quickly using an indexed database
+
+# security relevance
+Used to locate configuration files, logs, or sensitive binaries
+
+**Example:**
+```bash
+locate passwd
+```
+-----------------------------------------------------------------------------------
+
+# whereis
+Locates binaries, source code and man pages.
+
+# security relevance
+Useful for verifying commands paths and detecting suspicious or duplicate binaries
+
+**Example:**
+```bash
+whereis python
+```
+------------------------------------------------------------------------------------
+
+# which
+Shows the path of the command that will be executed
+
+# security relevance
+To prevent execution of malicious binaries through PATH hijacking
+
+**Example:**
+```bash
+which ls
+```
+-------------------------------------------------------------------------------
 
